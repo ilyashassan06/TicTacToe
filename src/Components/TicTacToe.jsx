@@ -5,7 +5,7 @@ import Board from "./Board";
 import GameState from "./GameState";
 import Reset from "./Reset";
 
-import GameOver from "./Gameover";
+import GameOver from "./GameOver";
 
 const gameOverSound = new Audio("/public/Sounds/game_over.wav");
 gameOverSound.volume = 0.2;
