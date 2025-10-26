@@ -1,11 +1,12 @@
 
 import { useState, useEffect } from "react";
 import Board from "./Board";
-import GameOver from "./GameOver";
+
 import GameState from "./GameState";
 import Reset from "./Reset";
-import gameOverSoundAsset from "../sounds/game_over.wav";
-import clickSoundAsset from "../sounds/click.wav";
+import gameOverSoundAsset from "../Sounds/game_over.wav";
+import clickSoundAsset from "../Sounds/click.wav";
+import GameOver from "./Gameover";
 
 const gameOverSound = new Audio(gameOverSoundAsset);
 gameOverSound.volume = 0.2;
