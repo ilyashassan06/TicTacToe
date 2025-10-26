@@ -7,11 +7,6 @@ import Reset from "./Reset";
 
 import GameOver from "./GameOver";
 
-const gameOverSound = new Audio("/public/Sounds/game_over.wav");
-gameOverSound.volume = 0.2;
-
-const clickSound = new Audio("/public/Sounds/click.wav");
-clickSound.volume = 0.5;
 
 const PLAYER_X = "X";
 const PLAYER_O = "O";
@@ -97,15 +92,13 @@ function TicTacToe() {
 
   useEffect(() => {
     if (tiles.some((tile) => tile !== null)) {
-         clickSound.currentTime = 0;
-    clickSound.play();
+         
     }
   }, [tiles]);
 
   useEffect(() => {
     if (gameState !== GameState.inProgress) {
-        gameOverSound.currentTime = 0;
-    gameOverSound.play();
+  
     }
   }, [gameState]);
 
