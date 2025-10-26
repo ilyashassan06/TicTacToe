@@ -7,10 +7,10 @@ import Reset from "./Reset";
 
 import GameOver from "./GameOver";
 
-const gameOverSound = new Audio("/Sounds/game_over.wav");
+const gameOverSound = new Audio("/public/Sounds/game_over.wav");
 gameOverSound.volume = 0.2;
 
-const clickSound = new Audio("/Sounds/click.wav");
+const clickSound = new Audio("/public/Sounds/click.wav");
 clickSound.volume = 0.5;
 
 const PLAYER_X = "X";
